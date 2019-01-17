@@ -8,7 +8,8 @@ public class Caladd {
 
 		do {
 			System.out.print("\n1. ADD two numbers \n");
-			System.out.print("2. Exit \n");
+			System.out.print("\n2. MUL two numbers \n");
+			System.out.print("3. Exit \n");
 			System.out.print("Enter your choice : \n");	
 			choice = scan.next().charAt(0);
 
@@ -19,8 +20,12 @@ public class Caladd {
 			res = a+b;
 			System.out.println("Result = " + res);
 			break;
-			
-			case '2':System.exit(0);
+			case '2':System.out.println("Enter two numbers");
+			a = scan.nextFloat();
+			b = scan.nextFloat();
+			res = a*b;
+			System.out.println("Result = " + res);
+			case '3':System.exit(0);
 			break;
 			
 			default : System.out.println("Wrong choice");
@@ -29,8 +34,8 @@ public class Caladd {
 			}
 		
 		System.out.println("_______________________________________________________");
-System.out.println("Just to see");
-		}while(choice!=2);
+
+		}while(choice!=3);
 
 
 	}
