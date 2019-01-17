@@ -7,7 +7,7 @@ public class Caladd {
 		Scanner scan = new Scanner(System.in);
 
 		do {
-			System.out.print("\n1. MUL two numbers \n");
+			System.out.print("\n1. ADD two numbers \n");
 			System.out.print("2. Exit \n");
 			System.out.print("Enter your choice : \n");	
 			choice = scan.next().charAt(0);
@@ -16,7 +16,7 @@ public class Caladd {
 			case '1': System.out.println("Enter two numbers:");
 			a = scan.nextFloat();
 			b = scan.nextFloat();
-			res = a*b;
+			res = a+b;
 			System.out.println("Result = " + res);
 			break;
 			
